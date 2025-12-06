@@ -147,6 +147,11 @@ class CommandLineArgsParser:
             '--end-weather',
             default='ClearNoon',
             help='set the end weather for carla simulation. Start == End for discrete weather.')
+        self.parser.add_argument(
+            '-o', '--output-dir',
+            default='out',
+            help='Base directory to save the output data (default: out)')
+
 
     def parse_args(self):
         return self.parser.parse_args()
