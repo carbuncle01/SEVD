@@ -13,7 +13,6 @@ FutureActor = carla.command.FutureActor
 def spawnVehicles(client, world, spawn_points, blueprintsVehicles, number):
     print("Spawning vehicles...")
     customBp = {
-        'vehicle.bh.crossbike': 8,
         'vehicle.carlamotors.firetruck': 3,
         'vehicle.ford.ambulance': 3,
         'vehicle.dodge.charger_police': 6,
